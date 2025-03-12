@@ -34,6 +34,6 @@ public class Task {
 	@ManyToOne(fetch =FetchType.LAZY)
 	@JoinColumn(name="userId")
 	private Users users;
-
+	private String name;
 	
 }
