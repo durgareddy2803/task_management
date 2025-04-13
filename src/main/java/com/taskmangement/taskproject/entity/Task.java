@@ -28,7 +28,7 @@ public class Task {
 	@Column(name="ID",nullable = false)
 	private long id;
 	
-	@Column(name="TASKNAME",nullable = true)
+	@Column(name="TASKNAME",nullable = false)
 	private String taskName;
 	
 	@ManyToOne(fetch =FetchType.LAZY)
