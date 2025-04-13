@@ -27,8 +27,9 @@ public class Task {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID",nullable = false)
 	private long id;
+	private long address;
 	
-	@Column(name="TASKNAME",nullable = false)
+	@Column(name="TASKNAME",nullable = true)
 	private String taskName;
 	
 	@ManyToOne(fetch =FetchType.LAZY)
