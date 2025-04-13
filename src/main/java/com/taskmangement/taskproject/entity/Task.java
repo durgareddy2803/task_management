@@ -28,6 +28,7 @@ public class Task {
 	@Column(name="ID",nullable = false)
 	private long id;
 	private long address;
+	private String name;
 	
 	@Column(name="TASKNAME",nullable = true)
 	private String taskName;
