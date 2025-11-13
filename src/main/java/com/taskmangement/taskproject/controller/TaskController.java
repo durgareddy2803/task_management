@@ -48,6 +48,6 @@ public class TaskController {
 	@DeleteMapping("/{userId}/tasks/{taskId}")
 	public ResponseEntity<String> deleteTask(@PathVariable(name="userId") long userId,@PathVariable(name="taskId") long taskId) {
 		taskService.deleteTask(userId,taskId);
-		return new ResponseEntity<>("user deleted succesfully",HttpStatus.OK);
+		return new ResponseEntity<>("user deleted succesfully in the db",HttpStatus.OK);
 	}
 }
