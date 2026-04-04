@@ -23,6 +23,8 @@ public class Users {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name ="ID",nullable =false)
 	private long id;
+    @Column(name="userid")
+    private long userId;
 	@Column(name ="NAME",nullable =false)
 	private String name;
 	@Column(name ="EMAIL",nullable =false)
