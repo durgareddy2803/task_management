@@ -30,8 +30,6 @@ public class Task {
 	
 	@Column(name="TASKNAME",nullable = false)
 	private String taskName;
-    @Column(name="task")
-    private String task;
 	
 	@ManyToOne(fetch =FetchType.LAZY)
 	@JoinColumn(name="userId")
